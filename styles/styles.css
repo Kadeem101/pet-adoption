@@ -208,6 +208,16 @@ h6 {
   color: var(--white);
 }
 
+.footer {
+  text-align: center;
+  margin-top: 137px;
+}
+
+.footer__copyright {
+  font-size: .875rem;
+  line-height: var(--line-height-def);
+  color: #A6A6A6;
+}
 .section-margin {
   margin-top: 131px;
 }
