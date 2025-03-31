@@ -63,6 +63,9 @@
     grid-template-columns: 1fr;
     row-gap: 28px;
   }
+  .footer {
+    margin-top: 80px;
+  }
 }
 
 /* Tablets */
