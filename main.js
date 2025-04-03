@@ -3,9 +3,8 @@ async function start() {
   const weatherData = await weatherPromise.json();
   const temperature = weatherData.properties.periods[0].temperature;
   document.querySelector("#temperature-value").textContent = temperature;
-  console.log(temperature);
-}
 
+}
 start()
 
 
