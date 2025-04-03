@@ -53,7 +53,6 @@ async function getPetData() {
     petInfo.appendChild(petDescription);
     petInfo.appendChild(petAge);
 
-
     // Create Pet Image
     const petImage = document.createElement("img");
     petImage.classList.add("pet__image");
