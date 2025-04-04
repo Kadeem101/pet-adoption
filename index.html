@@ -36,7 +36,7 @@
             <h2 class="info-card__heading">Sunny Play</h2>
             <p class="info-card__paragraph">
               Our center is located in beautiful Miami, and it&rsquo;s currently
-             <span id="temperature-value"></span>&deg;F at our pet playground.
+              <span id="temperature-value"></span>&deg;F at our pet playground.
             </p>
           </div>
           <div class="info-card">
@@ -94,7 +94,20 @@
         <div class="pets__cards"></div>
       </div>
     </section>
-   <footer class="footer">
+    <template id="pets__card-template">
+      <div class="pet">
+        <div class="pet__info">
+          <div class="pet__name-container">
+            <h3 class="pet__name"></h3>
+            <img src="./images/icons/envelope-plus 1.svg" alt="Contact icon" />
+          </div>
+          <p class="pet__description"></p>
+          <p class="pet__age"></p>
+        </div>
+        <img class="pet__image" src="" alt="" />
+      </div>
+    </template>
+    <footer class="footer">
       <p class="footer__copyright">
         2025 Pet Adoption Center. All rights Reserved
       </p>
