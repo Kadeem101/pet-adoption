@@ -36,5 +36,20 @@ function calcAge(birthYear) {
   return "Less than a year";
 }
 
+
+// Switching filter button styles larger screens
+const filterButtons = document.querySelectorAll(".pets__filter-button");
+filterButtons.forEach(button => {
+  button.addEventListener("click", handleClickEvent);
+  })
+
+function handleClickEvent(event) {
+  filterButtons.forEach(button => {
+    button.classList.remove("selected");
+    event.target.classList.add("selected");
+  });
+}
+
+
 // Copyright footer year
 document.querySelector("#year").textContent = new Date().getFullYear();

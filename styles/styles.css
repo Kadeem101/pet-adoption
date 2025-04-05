@@ -137,6 +137,12 @@ h6 {
   font-family: inherit;
   background-color: transparent;
 }
+.pets__filter-button:hover {
+  cursor: pointer;
+}
+.pets__filter-button:not(.selected):hover {
+  color: #7a7a7a;
+}
 .pets__cards {
   margin-top: 52px;
   display: grid;
@@ -181,6 +187,11 @@ h6 {
   color: #a2a2a2;
   font-size: 0.85rem;
   margin-top: 30px;
+}
+
+.selected {
+  color:var(--btn-blue);
+  text-decoration: underline;
 }
 
 /* Buttons */
