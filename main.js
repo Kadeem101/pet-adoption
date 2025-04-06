@@ -20,6 +20,8 @@ async function getPetData() {
     clone.querySelector(".pet__age").textContent = calcAge(pet.birthYear);
     clone.querySelector(".pet__image").src = pet.photo || "./images/pets/fallback.jpg";
     clone.querySelector(".pet__image").alt = `Photo of a ${pet.species} named ${pet.name}`;
+    clone.querySelector(".pet").dataset.species = pet.species;
+
 
     fragment.appendChild(clone);
   });
@@ -48,6 +50,19 @@ function handleClickEvent(event) {
     button.classList.remove("selected");
     event.target.classList.add("selected");
   });
+  // Loop through cards
+  const cards = document.querySelectorAll(".pet");
+  cards
+    .forEach(card => {
+      const cardSpecies = card.dataset.species;
+      const currentFilterButton = event.target.dataset.filter;
+      if (cardSpecies == currentFilterButton || currentFilterButton == "all") {
+        card.style.display = "grid";
+      }
+      else {
+        card.style.display = "none";
+      }
+    });
 }
 
 
