@@ -22,8 +22,8 @@
           fresh daily!
         </p>
         <div class="hero__btns">
-          <a href="#view-pets" class="btn--primary btn">View Pets</a>
-          <a href="#" class="btn--secondary btn">Manage Pets</a>
+          <a href="#view-pets" class="btn btn--primary">View Pets</a>
+          <a href="#" class="btn btn--secondary">Manage Pets</a>
         </div>
 
         <div class="info-cards">
@@ -87,9 +87,9 @@
         <h2 class="pets__heading">Meet Our Friends</h2>
         <div class="filter pets__filter">
           Show me:
-          <button class="pets__filter-button">All Pets</button>
-          <button class="pets__filter-button">Only Dogs</button>
-          <button class="pets__filter-button">Only Cats</button>
+          <button class="pets__filter-button selected" data-filter="all">All Pets</button>
+          <button class="pets__filter-button" data-filter="dog">Only Dogs</button>
+          <button class="pets__filter-button" data-filter="cat">Only Cats</button>
         </div>
         <div class="pets__cards"></div>
       </div>
@@ -108,7 +108,8 @@
       </div>
     </template>
     <footer class="footer">
-      <p class="footer__copyright"><span id="year"></span> Pet Adoption Center. All rights Reserved
+      <p class="footer__copyright">
+        <span id="year"></span> Pet Adoption Center. All rights Reserved
       </p>
     </footer>
     <script src="main.js"></script>
